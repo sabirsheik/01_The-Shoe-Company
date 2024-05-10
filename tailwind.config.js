@@ -2,30 +2,20 @@
 module.exports = {
   content: ["./*.{html,js}"],
   theme: {
-    screens: {
-      'sm': '640px',
-      // => @media (min-width: 640px) { ... }
-
-      'md': '768px',
-      // => @media (min-width: 768px) { ... }
-
-      'lg': '1024px',
-      // => @media (min-width: 1024px) { ... }
-
-      'xl': '1280px',
-      // => @media (min-width: 1280px) { ... }
-
-      '2xl': '1536px',
-      // => @media (min-width: 1536px) { ... }
-    },
     extend: {
       colors: {
         'trans-rgba': 'rgba(255, 255, 255, .1)',
+      },      
+      screens: {
+        'media440': '440px',
+        'media560': '560px',
+        'media1200': '1200px'
       },
-      // screens: {
-      //   'as': {'max':'1400px', 'max':'2600px'},
-      // },
+      backgroundImage: {
+        'testimonial-section': "url('https://i.postimg.cc/9Xk1nXZ6/miguel-a-amutio-QDv-u-Bc-po-Y-unsplash-1.png')",
+      }
     },
+  },
   plugins: [],
-}}
+}
 
