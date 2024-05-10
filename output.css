@@ -737,6 +737,10 @@ video {
   width: 250px;
 }
 
+.w-\[270px\] {
+  width: 270px;
+}
+
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -1133,6 +1137,14 @@ video {
 }
 
 @media (min-width: 440px) {
+  .media440\:w-\[250px\] {
+    width: 250px;
+  }
+
+  .media440\:w-\[400px\] {
+    width: 400px;
+  }
+
   .media440\:p-0 {
     padding: 0px;
   }
@@ -1166,6 +1178,14 @@ video {
 @media (min-width: 640px) {
   .sm\:w-\[400px\] {
     width: 400px;
+  }
+
+  .sm\:w-\[0px\] {
+    width: 0px;
+  }
+
+  .sm\:w-\[270px\] {
+    width: 270px;
   }
 }
 
