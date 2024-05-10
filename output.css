@@ -729,6 +729,14 @@ video {
   width: 100%;
 }
 
+.w-\[\] {
+  width: ;
+}
+
+.w-\[250px\] {
+  width: 250px;
+}
+
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -1152,6 +1160,12 @@ video {
   .media560\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .sm\:w-\[400px\] {
+    width: 400px;
   }
 }
 
