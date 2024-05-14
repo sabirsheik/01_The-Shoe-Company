@@ -4,9 +4,13 @@
   "description": "",
   "main": "tailwind.config.js",
   "scripts": {
-    "start": "npx tailwindcss -i ./input.css -o ./output.css --watch"
+    "start": "tailwindcss -i ./input.css -o ./output.css --watch --minify",
+    "start-minify": "tailwindcss -i ./input.css -o ./output.css --watch --minify"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
 }

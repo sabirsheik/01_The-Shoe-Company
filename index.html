@@ -6,11 +6,12 @@
   <link href="./output.css" rel="stylesheet">
   <link rel="shortcut icon" href="https://i.postimg.cc/76cFvFFL/shoe-company-logo-1.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- <link rel="stylesheet" href="style.css"> -->
   <title>The Shoe Company</title>
 </head>
 <body class="bg-black text-white relative scroll-smooth">
   <!-- Button -->
-  <button onclick="scrollToTop()" id="scrollBtn" title="Go to top" class="hidden fixed bottom-3 right-5 z-[99] text-xl bg-white text-black font-bold border-none rounded py-3 px-5 cursor-pointer">Top</button>
+  <button onclick="scrollToTop()" id="scrollBtn" title="Go to top"  class="hidden fixed bottom-3 right-5 z-[99] text-xl bg-white text-black font-bold border-none rounded py-3 px-5 cursor-pointer">Top</button>
   <!-- main-1 -->
  <div class="relative max-w-[1440px]  m-auto">
   <!-- bg pic -->
@@ -26,7 +27,7 @@
       </a>   
       <nav class="flex-initial  text-white font-bold lg:text-[20px] @screen max-md:hidden" id="menu">
         <div class="space-x-8  py-1  @screen  max-md:flex max-md:text-black max-md:w-[80%] max-md:flex-col max-md:gap-4 max-md:absolute max-md:right-3 max-md:top-24 max-md:text-2xl  max-md:text-left max-md:font-bold max-md:bg-white max-md:rounded-md">
-          <a href="#hero" class="pl-[30px]">Home</a>
+          <a href="#" class="pl-[30px]">Home</a>
           <a href="#how-it-works" >How It Works</a>
           <a href="#about">About</a>
           <a href="#testimonials">Testimonial</a>
@@ -34,7 +35,7 @@
             </div>        
            </nav>
           <button class="text-4xl text-white md:hidden">
-            <i class="fa-solid fa-bars" id="click"></i>
+            <i class="fa-solid fa-bars active:text-red-800" id="click"></i>
           </button>
         </header>
     
@@ -240,39 +241,7 @@
 <!-- Footer End -->
 
                                  <!-- Internal JavaScript -->
-   <script>
- const toggleButton = document.getElementById('click');
-    const menu = document.getElementById('menu');
-
-    toggleButton.addEventListener('click', () => {
-      menu.classList.toggle('max-md:hidden');
-    });
-
-
-    // 
-
-      // Get the button
-  var scrollBtn = document.getElementById("scrollBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-    scrollBtn.style.display = "block";
-  } else {
-    scrollBtn.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function scrollToTop() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
- </script>
-                               <!-- Internal JavaScript End -->
-
+   <script src="script.js"> </script>
                                <!-- The End  -->
                                <!-- Contact No and Whatsapp +92 3275359491 -->
 </body>
